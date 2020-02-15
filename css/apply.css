@@ -1,0 +1,87 @@
+@import 'https://fonts.googleapis.com/css?family=Montserrat|Open+Sans';
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web|Monoton|Righteous|Sigmar+One&display=swap');
+.education-form{
+	background-color: #FFDEAD;
+	width: 60%;
+	margin-top: 1%;
+	padding-top: 20px;
+	margin-bottom: 5%;
+	padding-bottom: 5%;
+	box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+.data-container .ssc-form{
+	border-right: 1px solid #00254e;
+}
+.data-container .hsc-form{
+
+}
+.data-container{
+	margin-top: 7%;
+	width: 80%;
+	border: 3px solid #00254e;
+	position: relative;
+	background-color: white;
+	box-shadow: -4px 4px 18px 3px black;
+
+
+}
+.bsc-container{
+	width: 80%;
+	border: 3px solid #00254e;
+	position: relative;
+	background-color: white;
+	box-shadow: -4px 4px 18px 3px black;
+
+}
+.header-ssc, .header-hsc, .header-bsc {
+	text-align: center;
+  font-family: 'Open Sans', sans-serif;
+	position: absolute;
+	right:0px;
+	left:0px;
+	width: auto;
+	font-weight: bold;
+	font-size: 1.5rem;
+}
+.header-ssc{
+	background-color: #00254e;
+	color: white;
+}
+.header-hsc{
+	background-color: #e7a61a;
+	color: white;
+
+}
+.header-bsc{
+	background-color: black;
+	color: white;
+}
+.data-ssc, .data-hsc, .data-bsc {
+	margin-top: 25%;
+}
+.edu-h4{
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+	text-transform: uppercase;
+	position: absolute;
+	right:0px;
+	left:0px;
+	top: 0px;
+	width: auto;
+	margin-bottom: 2%;
+
+}
+/*-- Submit BUTTON --*/
+.bsc-container .button-submit
+{
+	text-align: center;
+	margin-top: 2%;
+	margin-bottom: 2%;
+}
+#edu-submit{
+	width: 50%;
+	line-height: 15px;
+  border: 2px solid rgba(108, 89, 179, 0.75);
+  border-radius: 40px;
+}

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <!-- This is used for responsiveness -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Site title -->
+    <title>CSEDU | MSc</title>
+    <!-- bootstrap css link -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Title logto -->
+    <link rel="icon" href="http://www.cse.du.ac.bd/wp-content/uploads/2015/05/favicon_square.png">
+    <!-- my styles -->
+    <link rel="stylesheet" href="css/navbar-styles.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/apply.css">
+
+  </head>
+  <body>
+      <!--  Including Nav File -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+      <script src="js/navbarLoad.js"></script>
+      <script  type="text/javascript">
+    //  document.getElementById("nav-home").classList.add("active");
+      $(document).ready( function(){
+        $("#nav-apply").addClass("active");
+      });
+      </script>
+
+      <!-- Nav file added above -->
+
+
+
+    <!-- Data entry -->
+    <div class="container card education-form">
+
+      <div class="card-header edu-h4">
+        Give your educational information
+      </div>
+      <div class="container  data-container">
+              <div class="row">
+                  <div class="col-md-6 ssc-form">
+                    <div class="header-ssc">
+                      SSC
+                    </div>
+                    <div class="data-ssc">
+
+                      <div class="form-group">
+                        <label for="sscReg">Registration</label>
+                        <input type="text" class="form-control" name="Registration" value="" id="sscReg" placeholder="Your SSC Registration">
+                      </div>
+                      <div class="form-group">
+                        <label for="sscRoll">Roll</label>
+                        <input type="text" class="form-control" name="Roll" value="" id="sscRoll" placeholder="Your SSC Roll">
+                      </div>
+                      <div class="form-group">
+                        <label for="sscBoard">Board</label>
+                        <select id="sscBoard" class="form-control" title="Passing Board">
+                          <option value="">Dhaka</option>
+                          <option value="">Rajshahi</option>
+                          <option value="">Dinajpur</option>
+                          <option value="">Khulnai</option>
+                          <option value="">Barishal</option>
+                          <option value="">Cumilla</option>
+                          <option value="">Chitagong</option>
+                          <option value="">Jessore</option>
+                        </select>
+                      </div>
+                      <div class="form-group">
+                          <label for="sscYear">Passing Year</label>
+                          <select id="sscYear" class="form-control" title="Passing Year"></select>
+                      </div>
+                  </div>
+                  </div>
+                  <div class="col-md-6 hsc-form">
+                    <div class="header-hsc">
+                      HSC
+                    </div>
+                    <div class="data-hsc">
+                      <div class="form-group">
+                        <label for="hscReg">Registration</label>
+                        <input type="text" class="form-control" name="Registration" value="" id="hscReg" placeholder="Your HSC Registration">
+                      </div>
+                      <div class="form-group">
+                        <label for="hscRoll">Roll</label>
+                        <input type="text" class="form-control" name="Roll" value="" id="hscRoll" placeholder="Your HSC Roll">
+                      </div>
+                      <div class="form-group">
+                        <label for="hscBoard">Board</label>
+                        <select id="hscBoard" class="form-control" title="Passing Board">
+                          <option value="">Dhaka</option>
+                          <option value="">Rajshahi</option>
+                          <option value="">Dinajpur</option>
+                          <option value="">Khulnai</option>
+                          <option value="">Barishal</option>
+                          <option value="">Cumilla</option>
+                          <option value="">Chitagong</option>
+                          <option value="">Jessore</option>
+                        </select>
+                      </div>
+                      <div class="form-group">
+                          <label for="hscYear">Passing Year</label>
+                          <select id="hscYear" class="form-control" title="Passing Year"></select>
+                      </div>
+                    </div>
+
+                  </div>
+          </div>
+        </div>
+
+        <div class="container bsc-container">
+
+            <div class="header-bsc">
+                B.Sc
+            </div>
+            <div class="row">
+              <div class="col-md-6 unv-form">
+                <div class="data-bsc" >
+                  <div class="form-group">
+                    <label for="uniName">University</label>
+                    <input type="text" class="form-control" name="University" value="" id="uniName" placeholder="Input Your University">
+                  </div>
+                  <div class="form-group">
+                    <label for="deptName">Department</label>
+                    <input type="text" class="form-control" name="Department" value="" id="deptName" placeholder="Input Department">
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6 unv-form">
+                <div class="data-bsc">
+                  <div class="form-group">
+                      <label for="uniYear">Passing Year</label>
+                      <select id="uniYear" class="form-control" title="Passing Year"></select>
+                  </div>
+                  <div class="form-group">
+                    <label for="cgpa">CGPA</label>
+                    <input type="text" class="form-control" name="Roll" value="" id="cgpa" placeholder="Input CGPA">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row button-submit">
+              <div class="col-md-12">
+                <button type="button" class="btn btn-outline-success" id="edu-submit">Submit</button>
+              </div>
+            </div>
+          </div>
+
+    </div>
+
+
+
+
+
+    <script type="text/javascript">
+      var max = new Date().getFullYear() ;
+      min = max - 20;
+
+      function selectYear( selectElementId){
+        select = document.getElementById(selectElementId);
+        for (var i = min; i<=max; i++){
+            var opt = document.createElement("option");
+            opt.value = i;
+            opt.innerHTML = i;
+            select.appendChild(opt);
+        }
+    }
+
+    selectYear("hscYear");
+    selectYear("sscYear");
+    selectYear("uniYear");
+    </script>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+  </body>
+</html>
